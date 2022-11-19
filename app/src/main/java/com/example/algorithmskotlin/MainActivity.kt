@@ -6,9 +6,10 @@ import kotlin.math.abs
 
 fun main(){
 //    println(diagonalDifference(arrayOf(arrayOf(11, 2, 4),arrayOf(4, 5, 6),arrayOf(10, 8, -12))))
-    println(plusMinus(arrayOf(-4, 3, -9, 0, 4, 1)))
+//    println(plusMinus(arrayOf(-4, 3, -9, 0, 4, 1)))
 
-    println(marsExploration("SOSTOT"))
+//    println(marsExploration("SOSTOT"))
+
 }
 
 fun diagonalDifference(arr: Array<Array<Int>>): Int {
@@ -62,4 +63,23 @@ fun marsExploration(s: String): Int {
         }
     }
     return count
+}
+
+
+/**
+ * We say that a string contains the word hackerrank if a subsequence of its characters spell the word hackerrank. Remeber that a subsequence maintains the order of characters selected from a sequence.
+
+More formally, let p[0], p[1],  ...,p[9] be the respective indices of h, a, c, k, e, r, r, a, n, k in string . If p[0] < p[1] < ... < p[9] is true, then  contains hackerrank.
+
+For each query, print YES on a new line if the string contains hackerrank, otherwise, print NO.
+ */
+fun hackerrankInString(s: String): String {
+    // Write your code here
+    val hackerrank = "hackerrank"
+    var count = 0
+    var str = setOf<String>()
+    for (i in hackerrank.indices) {
+
+    }
+    return if (count == hackerrank.length) "YES" else "NO"
 }
