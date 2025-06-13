@@ -1,7 +1,5 @@
 package com.example.algorithmskotlin
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import kotlin.math.abs
 
 fun main(){
@@ -21,7 +19,7 @@ fun diagonalDifference(arr: Array<Array<Int>>): Int {
          val rightToLeft = it.mapIndexed { index, value ->
              value[it.size - index - 1]
          }.sum()
-         Math.abs(leftToRight - rightToLeft)
+         abs(leftToRight - rightToLeft)
 
    }
 }
